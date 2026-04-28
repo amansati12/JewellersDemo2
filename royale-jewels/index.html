@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokul Jewellers — Timeless Luxury Since 1995</title>
+  <meta name="description" content="Gokul Jewellers — Where tradition meets elegance. Custom &amp; unique jewellery pieces in gold, diamonds, silver and platinum from Porbandar, Gujarat.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<!-- Page Overlay -->
+<div id="page-overlay"></div>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-brand">Gokul Jewellers</div>
+  <div class="preloader-progress"></div>
+</div>
+
+<!-- ═══ NAVBAR ═══════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      Royale
+      <span class="nav-brand-sub">Where Tradition Meets Elegance</span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item">
+        <a href="collections.html" class="nav-link">Collections ▾</a>
+        <div class="nav-dropdown">
+          <a href="collections.html#gold">22K Gold Jewellery</a>
+          <a href="collections.html#diamond">Diamond Collection</a>
+          <a href="collections.html#bridal">Bridal Sets</a>
+          <a href="collections.html#silver">Silver Range</a>
+          <a href="collections.html#platinum">Platinum Elite</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="partners.html" class="nav-link">Partners</a></li>
+      <li class="nav-item"><a href="testimonials.html" class="nav-link">Reviews</a></li>
+      <li class="nav-item"><a href="blog.html" class="nav-link">Journal</a></li>
+      <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="btn-royale nav-cta"><span>Visit Showroom</span></a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav">
+  <button class="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="testimonials.html">Reviews</a></li>
+    <li><a href="blog.html">Journal</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ═══ HERO SLIDER ══════════════════════════════════════════ -->
+<section class="hero-section">
+  <div class="hero-slides">
+    <div class="hero-slide slide-1 active"></div>
+    <div class="hero-slide slide-2"></div>
+    <div class="hero-slide slide-3"></div>
+    <div class="hero-slide slide-4"></div>
+  </div>
+  <div class="hero-frame"><span></span></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-kicker">
+        <div class="hero-kicker-line"></div>
+        <span class="hero-kicker-text">Est. 1995 · Porbandar, Gujarat</span>
+      </div>
+      <h1 class="hero-title">
+        Where Tradition<br>Meets <span class="italic-gold">Elegance</span>
+      </h1>
+      <p class="hero-subtitle">Custom &amp; unique jewellery pieces crafted with devotion — in gold, diamonds, silver and platinum, from the heart of Porbandar.</p>
+      <div class="hero-actions">
+        <a href="collections.html" class="btn-royale"><i class="fa-regular fa-gem"></i> <span>Explore Collections</span></a>
+        <a href="about.html" class="btn-ghost dark-bg">Our Heritage</a>
+      </div>
+    </div>
+  </div>
+  <!-- Slider Controls -->
+  <div class="slider-controls">
+    <div class="slider-dots">
+      <button class="slider-dot active" aria-label="Slide 1"></button>
+      <button class="slider-dot" aria-label="Slide 2"></button>
+      <button class="slider-dot" aria-label="Slide 3"></button>
+      <button class="slider-dot" aria-label="Slide 4"></button>
+    </div>
+    <div class="slider-nav">
+      <button class="slider-btn slider-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slider-btn slider-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+  <div class="hero-counter">
+    <span class="counter-current">01</span>
+    <span class="counter-total">/ 04</span>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE ═══════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item"><i class="fa-solid fa-gem"></i> BIS Hallmarked Gold<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-certificate"></i> GIA Certified Diamonds<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-rotate"></i> Lifetime Buyback Policy<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Stones<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-truck-fast"></i> Insured Home Delivery<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-palette"></i> Custom Design Studio<div class="marquee-dot"></div></span>
+    <!-- Duplicates for infinite loop -->
+    <span class="marquee-item"><i class="fa-solid fa-gem"></i> BIS Hallmarked Gold<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-certificate"></i> GIA Certified Diamonds<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-rotate"></i> Lifetime Buyback Policy<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Stones<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-truck-fast"></i> Insured Home Delivery<div class="marquee-dot"></div></span>
+    <span class="marquee-item"><i class="fa-solid fa-palette"></i> Custom Design Studio<div class="marquee-dot"></div></span>
+  </div>
+</div>
+
+<!-- ═══ STATS ════════════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-pill" data-aos="fade-up" data-aos-delay="100">
+      <div class="stat-num" data-count="29" data-suffix="+">0</div>
+      <div class="stat-info"><div class="stat-label">Years</div><div class="stat-sublabel">of Excellence</div></div>
+    </div>
+    <div class="stat-pill" data-aos="fade-up" data-aos-delay="175">
+      <div class="stat-num" data-count="5000" data-suffix="+">0</div>
+      <div class="stat-info"><div class="stat-label">Families</div><div class="stat-sublabel">Trust Royale</div></div>
+    </div>
+    <div class="stat-pill" data-aos="fade-up" data-aos-delay="250">
+      <div class="stat-num" data-count="18" data-suffix="">0</div>
+      <div class="stat-info"><div class="stat-label">Showrooms</div><div class="stat-sublabel">in Porbandar</div></div>
+    </div>
+    <div class="stat-pill" data-aos="fade-up" data-aos-delay="325">
+      <div class="stat-num" data-count="3" data-suffix="K+">0</div>
+      <div class="stat-info"><div class="stat-label">Designs</div><div class="stat-sublabel">Unique Creations</div></div>
+    </div>
+    <div class="stat-pill" data-aos="fade-up" data-aos-delay="400">
+      <div class="stat-num" data-count="28" data-suffix="">0</div>
+      <div class="stat-info"><div class="stat-label">Awards</div><div class="stat-sublabel">Industry Excellence</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FEATURED COLLECTIONS ═════════════════════════════════ -->
+<section class="section-pad bg-alabaster">
+  <div class="container">
+    <div class="section-header centered" data-aos="fade-up">
+      <div class="section-eyebrow">Our Collections</div>
+      <h2 class="section-title-main">Crafted for Every <em>Moment</em></h2>
+      <div class="ornament centered"><div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-diamond-sm"></div><div class="ornament-diamond"></div><div class="ornament-line"></div></div>
+      <p class="section-desc centered mt-3">From bridal grandeur to everyday brilliance — each collection is a testament to four decades of mastery.</p>
+    </div>
+
+    <div class="collections-layout" data-aos="fade-up" data-aos-delay="100">
+      <!-- Tall featured card -->
+      <div class="col-card tall col-span-2-rows">
+        <img class="col-card-img" src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=900&q=85" alt="Bridal Collection" loading="lazy">
+        <div class="col-card-overlay"></div>
+        <div class="col-card-body">
+          <p class="col-card-tag">Signature</p>
+          <h3 class="col-card-name">Bridal Grand Collection</h3>
+          <p class="col-card-count">240+ designs</p>
+          <a href="collections.html#bridal" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- 22K Gold -->
+      <div class="col-card medium">
+        <img class="col-card-img" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&q=85" alt="Gold" loading="lazy">
+        <div class="col-card-overlay"></div>
+        <div class="col-card-body">
+          <p class="col-card-tag">Precious Metals</p>
+          <h3 class="col-card-name">22K Gold</h3>
+          <a href="collections.html#gold" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- Diamond -->
+      <div class="col-card medium">
+        <img class="col-card-img" src="https://images.unsplash.com/photo-1573408301185-9519f94815b1?w=700&q=85" alt="Diamond" loading="lazy">
+        <div class="col-card-overlay"></div>
+        <div class="col-card-body">
+          <p class="col-card-tag">GIA Certified</p>
+          <h3 class="col-card-name">Diamond Solitaire</h3>
+          <a href="collections.html#diamond" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row -->
+    <div class="row g-3 mt-1" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-sm-6 col-lg-3">
+        <div class="col-card" style="aspect-ratio:1/1">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=500&q=85" alt="Silver" loading="lazy">
+          <div class="col-card-overlay"></div>
+          <div class="col-card-body">
+            <p class="col-card-tag">Contemporary</p>
+            <h3 class="col-card-name" style="font-size:1.2rem">Silver Edit</h3>
+            <a href="collections.html#silver" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="col-card" style="aspect-ratio:1/1">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=85" alt="Platinum" loading="lazy">
+          <div class="col-card-overlay"></div>
+          <div class="col-card-body">
+            <p class="col-card-tag">Exclusive</p>
+            <h3 class="col-card-name" style="font-size:1.2rem">Platinum Elite</h3>
+            <a href="collections.html#platinum" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="col-card" style="aspect-ratio:1/1">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&q=85" alt="Rings" loading="lazy">
+          <div class="col-card-overlay"></div>
+          <div class="col-card-body">
+            <p class="col-card-tag">Proposal</p>
+            <h3 class="col-card-name" style="font-size:1.2rem">Engagement Rings</h3>
+            <a href="collections.html" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="col-card" style="aspect-ratio:1/1">
+          <img class="col-card-img" src="https://images.unsplash.com/photo-1587467512961-120760940315?w=500&q=85" alt="Temple" loading="lazy">
+          <div class="col-card-overlay"></div>
+          <div class="col-card-body">
+            <p class="col-card-tag">Heritage</p>
+            <h3 class="col-card-name" style="font-size:1.2rem">Temple Gold</h3>
+            <a href="collections.html" class="col-card-action">Explore <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="collections.html" class="btn-ghost">View All Collections <i class="fa-solid fa-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SPLIT — HERITAGE STORY ═══════════════════════════════ -->
+<div class="split-section">
+  <div class="split-img" data-aos="fade-right">
+    <img src="https://images.unsplash.com/photo-1601121141461-9d6647bef0e6?w=900&q=85" alt="Our Atelier" loading="lazy">
+  </div>
+  <div class="split-content silk" data-aos="fade-left">
+    <div class="section-eyebrow">Our Heritage</div>
+    <h2 class="section-title-main" style="margin-bottom:1.2rem">Four Decades of <em>Devotion</em></h2>
+    <div class="ornament"><div class="ornament-line"></div><div class="ornament-diamond"></div></div>
+    <p class="section-desc mt-3 mb-3">In 1995, Gokul Jewellers was founded on Kirti Mandir Road, Porbandar with a single dream: to create jewellery that felt deeply personal — warm, elegant, and uniquely yours.</p>
+    <p style="font-family:var(--font-edit);font-size:1.05rem;color:var(--stone);line-height:1.85;margin-bottom:2rem;">Today, that dream lives in the hands of skilled artisans across our showroom, yet the soul remains the same — intimate, passionate, and uncompromising in every filigree, every setting, every hallmark.</p>
+    <a href="about.html" class="btn-royale">Read Our Story <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- ═══ TRUST CARDS ═══════════════════════════════════════════ -->
+<section class="section-pad bg-onyx-2">
+  <div class="container">
+    <div class="section-header centered" data-aos="fade-up">
+      <div class="section-eyebrow" style="color:var(--gold-400)">Why Royale</div>
+      <h2 class="section-title-main on-dark">A Legacy Built on <em>Trust</em></h2>
+      <div class="ornament centered"><div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-diamond-sm"></div><div class="ornament-diamond"></div><div class="ornament-line"></div></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h4 class="trust-title">BIS Hallmarked</h4>
+          <p class="trust-desc">Every gold piece carries the Bureau of Indian Standards Hallmark — your statutory guarantee of purity and authenticity.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="175">
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-gem"></i></div>
+          <h4 class="trust-title">GIA Certified</h4>
+          <p class="trust-desc">Each diamond in our collection is independently graded by GIA for cut, colour, clarity, and carat — full report included.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h4 class="trust-title">Lifetime Buyback</h4>
+          <p class="trust-desc">Royale guarantees full value retention with a lifetime buyback policy — your jewellery is always an investment.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="325">
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h4 class="trust-title">Master Artisans</h4>
+          <p class="trust-desc">1,200+ craftsmen trained in traditional Rajasthani and South Indian techniques, finishing every detail by hand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURED TESTIMONIAL ══════════════════════════════════ -->
+<section class="section-pad-md bg-silk">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="section-eyebrow">Client Love</div>
+        <h2 class="section-title-main">Moments Made <em>Precious</em></h2>
+        <div class="ornament mt-2 mb-4"><div class="ornament-line"></div><div class="ornament-diamond"></div></div>
+        <a href="testimonials.html" class="btn-text-link">Read All Reviews <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"The bridal set was beyond what I had imagined. Five years on, it still draws compliments at every family gathering."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">P</div>
+                <div><div class="author-name">Priya Mehta</div><div class="author-loc">Mumbai</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="testimonial-text">"Three generations of my family have trusted Royale. The quality is timeless, and the service is always impeccable."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">A</div>
+                <div><div class="author-name">Ananya Sharma</div><div class="author-loc">Delhi</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══════════════════════════════════════════════ -->
+<section class="cta-band">
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center">
+        <div class="section-eyebrow justify-content-center" data-aos="fade-up">Begin Your Journey</div>
+        <h2 class="cta-band-title" data-aos="fade-up" data-aos-delay="100">Find Your <span>Perfect Piece</span></h2>
+        <p class="cta-band-sub" data-aos="fade-up" data-aos-delay="200">Visit our showroom and let our expert consultants guide you to a creation that speaks your story.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap" data-aos="fade-up" data-aos-delay="300">
+          <a href="gallery.html" class="btn-royale"><i class="fa-regular fa-images"></i> <span>Browse Gallery</span></a>
+          <a href="contact.html" class="btn-ghost dark-bg">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LATEST BLOG ═══════════════════════════════════════════ -->
+<section class="section-pad bg-alabaster">
+  <div class="container">
+    <div class="d-flex align-items-end justify-content-between mb-5 flex-wrap gap-3" data-aos="fade-up">
+      <div>
+        <div class="section-eyebrow">The Gokul Jewellers Journal</div>
+        <h2 class="section-title-main">Stories of <em>Gold</em></h2>
+      </div>
+      <a href="blog.html" class="btn-text-link">All Articles <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Bridal Guide</div>
+            <h4 class="blog-title">How to Choose the Perfect Bridal Jewellery for Your Wedding Day</h4>
+            <div class="blog-meta"><span>April 18, 2025</span><div class="blog-meta-dot"></div><span>6 min read</span></div>
+            <a href="blog.html" class="btn-text-link">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1573408301185-9519f94815b1?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Education</div>
+            <h4 class="blog-title">The 4Cs of Diamonds Explained — What Every Buyer Must Know</h4>
+            <div class="blog-meta"><span>April 10, 2025</span><div class="blog-meta-dot"></div><span>8 min read</span></div>
+            <a href="blog.html" class="btn-text-link">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Care Tips</div>
+            <h4 class="blog-title">How to Keep Your Gold Jewellery Shining for Generations</h4>
+            <div class="blog-meta"><span>March 28, 2025</span><div class="blog-meta-dot"></div><span>5 min read</span></div>
+            <a href="blog.html" class="btn-text-link">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand-name">Gokul Jewellers</div>
+        <div class="footer-brand-tagline">Where Tradition Meets Elegance</div>
+        <p class="footer-desc">Crafting custom &amp; unique jewellery pieces with devotion — serving Porbandar with pride since 1995.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/gokul.jewellers/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-col-title">Collections</div>
+        <ul class="footer-links">
+          <li><a href="collections.html#gold">22K Gold</a></li>
+          <li><a href="collections.html#diamond">Diamond</a></li>
+          <li><a href="collections.html#bridal">Bridal Sets</a></li>
+          <li><a href="collections.html#silver">Silver</a></li>
+          <li><a href="collections.html#platinum">Platinum</a></li>
+          <li><a href="collections.html">Engagement</a></li>
+          <li><a href="collections.html">Temple Gold</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-contact-row"><i class="fa-solid fa-location-dot footer-contact-icon"></i><div class="footer-contact-text">Amlani Complex, Shop No. 21, 9 Kirti<br>Mandir Road, Porbandar — 360575, Gujarat</div></div>
+        <div class="footer-contact-row"><i class="fa-solid fa-phone footer-contact-icon"></i><div class="footer-contact-text"><a href="tel:+912862252580">+91 286 225 2580</a></div></div>
+        <div class="footer-contact-row"><i class="fa-solid fa-envelope footer-contact-icon"></i><div class="footer-contact-text"><a href="mailto:hello@gokuljewellers.in">hello@gokuljewellers.in</a></div></div>
+        <div class="footer-contact-row"><i class="fa-solid fa-clock footer-contact-icon"></i><div class="footer-contact-text">Mon–Sat: 10:00 AM – 8:00 PM</div></div>
+        <div class="footer-col-title mt-4">Newsletter</div>
+        <p style="font-size:0.78rem;margin-bottom:0.7rem;color:rgba(255,255,255,0.3);">New collections and exclusive offers.</p>
+        <div class="footer-newsletter">
+          <input type="email" class="newsletter-input" placeholder="your@email.com">
+          <button class="newsletter-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mt-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p>© 2025 Gokul Jewellers Pvt. Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919376004356?text=Hello%2C%20I%20am%20interested%20in%20Gokul%20Jewellers." class="wa-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Chat with us on WhatsApp</span>
+</a>
+<!-- Scroll Top -->
+<button class="scroll-top-btn" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- Lightbox (dummy for homepage) -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-wrap">
+    <button class="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+    <img src="" alt="" class="lightbox-img">
+    <div class="lightbox-caption"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gokul Jewellers Journal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog-hero-featured { position:relative; border-radius:var(--radius-md); overflow:hidden; cursor:pointer; }
+    .blog-hero-featured img { width:100%; aspect-ratio:16/8; object-fit:cover; transition:transform 0.8s var(--ease-out); }
+    .blog-hero-featured:hover img { transform:scale(1.04); }
+    .blog-hero-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(8,8,8,0.92) 0%, rgba(8,8,8,0.3) 50%, transparent 100%); display:flex; align-items:flex-end; padding:3rem; }
+    .featured-post-label { font-size:0.6rem; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold-400); margin-bottom:0.5rem; }
+    .featured-post-title { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2.5rem); color:var(--white); line-height:1.15; margin-bottom:0.8rem; max-width:600px; }
+    .featured-post-meta { display:flex; gap:1rem; font-size:0.72rem; color:rgba(255,255,255,0.4); }
+    .tag-pill { display:inline-block; padding:0.25rem 0.75rem; border:1px solid rgba(201,153,44,0.3); border-radius:50px; font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-500); background:rgba(201,153,44,0.04); margin-right:0.4rem; margin-bottom:0.4rem; transition:var(--t-med); cursor:pointer; }
+    .tag-pill:hover, .tag-pill.active { background:var(--onyx); color:var(--gold-300); border-color:var(--gold-400); }
+  </style>
+</head>
+<body>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<div id="page-overlay"></div>
+<div id="preloader"><div class="preloader-brand">Gokul Jewellers</div><div class="preloader-progress"></div></div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Gokul<span class="nav-brand-sub">Where Tradition Meets Elegance</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="collections.html" class="nav-link">Collections</a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="partners.html" class="nav-link">Partners</a></li>
+      <li class="nav-item"><a href="testimonials.html" class="nav-link">Reviews</a></li>
+      <li class="nav-item"><a href="blog.html" class="nav-link active">Journal</a></li>
+      <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="btn-royale nav-cta"><span>Visit Showroom</span></a>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav"><button class="mobile-close"><i class="fa-solid fa-xmark"></i></button><ul class="mobile-nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="collections.html">Collections</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="services.html">Services</a></li><li><a href="partners.html">Partners</a></li><li><a href="testimonials.html">Reviews</a></li><li><a href="blog.html">Journal</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=80')"></div>
+  <div class="page-hero-tint"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb-nav"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span style="color:rgba(255,255,255,0.4);font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase">Journal</span></div>
+    <h1 class="page-hero-title">The Royale <span class="italic-gold">Journal</span></h1>
+  </div>
+</section>
+
+<section class="section-pad bg-alabaster">
+  <div class="container">
+
+    <!-- Featured Post -->
+    <div class="blog-hero-featured mb-5" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=1400&q=85" alt="Featured Post" loading="lazy">
+      <div class="blog-hero-overlay">
+        <div>
+          <div class="featured-post-label"><i class="fa-solid fa-crown me-1"></i> Featured Story</div>
+          <h2 class="featured-post-title">The Art of the Bridal Trousseau: A Complete Guide for the Modern Indian Bride</h2>
+          <div class="featured-post-meta"><span><i class="fa-regular fa-calendar me-1"></i>April 22, 2025</span><span><i class="fa-regular fa-clock me-1"></i>12 min read</span><span><i class="fa-solid fa-tag me-1" style="color:var(--gold-400)"></i>Bridal Guide</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tag Filter -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="tag-pill active">All Articles</span>
+      <span class="tag-pill">Bridal Guide</span>
+      <span class="tag-pill">Education</span>
+      <span class="tag-pill">Care Tips</span>
+      <span class="tag-pill">Trends</span>
+      <span class="tag-pill">Gifting</span>
+      <span class="tag-pill">Heritage</span>
+    </div>
+
+    <!-- Article Grid -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1573408301185-9519f94815b1?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Education</div>
+            <h4 class="blog-title">The 4Cs of Diamonds Explained — What Every Buyer Must Know Before Purchasing</h4>
+            <div class="blog-meta"><span>April 10, 2025</span><div class="blog-meta-dot"></div><span>8 min read</span></div>
+            <p class="blog-excerpt">Understanding cut, colour, clarity, and carat is the foundation of every confident diamond purchase. Our master gemologist breaks it all down.</p>
+            <a href="#" class="btn-text-link">Read Article <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="175">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Care Tips</div>
+            <h4 class="blog-title">How to Keep Your Gold Jewellery Radiant for Generations — Expert Care Guide</h4>
+            <div class="blog-meta"><span>March 28, 2025</span><div class="blog-meta-dot"></div><span>5 min read</span></div>
+            <p class="blog-excerpt">Gold is resilient, but it deserves care. Our artisans share the professional secrets to maintaining your pieces' brilliance at home.</p>
+            <a href="#" class="btn-text-link">Read Article <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Bridal Guide</div>
+            <h4 class="blog-title">How to Choose the Perfect Bridal Jewellery — A Region-by-Region Style Guide</h4>
+            <div class="blog-meta"><span>April 18, 2025</span><div class="blog-meta-dot"></div><span>10 min read</span></div>
+            <p class="blog-excerpt">From Rajasthani Kundan to South Indian temple gold — every Indian wedding tradition has its own unique jewellery language. We decode it all.</p>
+            <a href="#" class="btn-text-link">Read Article <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Trends</div>
+            <h4 class="blog-title">Jewellery Trends Dominating 2025 — What's In, What's Timeless, What to Buy</h4>
+            <div class="blog-meta"><span>March 15, 2025</span><div class="blog-meta-dot"></div><span>7 min read</span></div>
+            <p class="blog-excerpt">Layering, geometric motifs, and coloured gemstones are leading this year's jewellery conversation. Our creative director shares her top picks.</p>
+            <a href="#" class="btn-text-link">Read Article <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="175">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Gifting</div>
+            <h4 class="blog-title">The Ultimate Jewellery Gift Guide for Every Occasion — From ₹5,000 to ₹5,00,000</h4>
+            <div class="blog-meta"><span>March 5, 2025</span><div class="blog-meta-dot"></div><span>6 min read</span></div>
+            <p class="blog-excerpt">Whether it's a birthday, anniversary, or a spontaneous celebration — our gemologists have curated the perfect gift at every budget level.</p>
+            <a href="#" class="btn-text-link">Read Article <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+        <div class="blog-card">
+          <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1587467512961-120760940315?w=600&q=80" alt="Blog" loading="lazy"></div>
+          <div class="blog-body">
+            <div class="blog-cat">Heritage</div>
+            <h4 class="blog-title">The Dying Art of Jadau — How Royale Is Preserving India's Most Intricate Jewellery Craft</h4>
+            <div class="blog-meta"><span>Feb 20, 2025</span><div class="blog-meta-dot"></div><span>9 min read</span></div>
+            <p class="blog-excerpt">Jadau is a 500-year-old tradition of setting uncut stones in gold. Meet the last generation of masters keeping this extraordinary craft alive.</p>
+            <a href="#" class="btn-text-link">Read Article <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter CTA inline -->
+    <div class="mt-5 p-5 text-center" style="background:var(--onyx-2);border-radius:var(--radius-md);border:1px solid rgba(201,153,44,0.12)" data-aos="fade-up">
+      <div class="section-eyebrow justify-content-center">The Royale Letter</div>
+      <h3 style="font-family:var(--font-display);font-size:1.8rem;color:var(--white);margin-bottom:0.5rem">Stories Delivered to Your Inbox</h3>
+      <p style="font-family:var(--font-edit);font-style:italic;color:rgba(255,255,255,0.4);margin-bottom:1.5rem">Monthly jewellery stories, care tips, exclusive offers, and new collection previews.</p>
+      <div style="max-width:420px;margin:0 auto;display:flex;gap:0.5rem">
+        <input type="email" class="newsletter-input" placeholder="your@email.com" style="flex:1">
+        <button class="btn-royale" style="flex-shrink:0"><span>Subscribe</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"><div class="container"><div class="row g-5"><div class="col-lg-4"><div class="footer-brand-name">Gokul Jewellers</div><div class="footer-brand-tagline">Where Tradition Meets Elegance</div><p class="footer-desc">Crafting custom &amp; unique jewellery with devotion and love from Porbandar, Gujarat.</p><div class="footer-socials"><a href="https://www.instagram.com/gokul.jewellers/" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-instagram"></i></a><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a><a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></div></div><div class="col-sm-6 col-lg-2"><div class="footer-col-title">Navigate</div><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="collections.html">Collections</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="col-sm-6 col-lg-2"><div class="footer-col-title">Journal</div><ul class="footer-links"><li><a href="blog.html">Bridal Guides</a></li><li><a href="blog.html">Education</a></li><li><a href="blog.html">Care Tips</a></li><li><a href="blog.html">Trends</a></li><li><a href="blog.html">Heritage</a></li></ul></div><div class="col-lg-4"><div class="footer-col-title">Connect</div><div class="footer-contact-row"><i class="fa-solid fa-location-dot footer-contact-icon"></i><div class="footer-contact-text">Amlani Complex, Shop No. 21, 9 Kirti Mandir Road, Porbandar</div></div><div class="footer-contact-row"><i class="fa-solid fa-phone footer-contact-icon"></i><div class="footer-contact-text"><a href="tel:+912862252580">+91 286 225 2580</a></div></div></div></div></div><div class="footer-bottom mt-5"><div class="container"><div class="d-flex flex-wrap justify-content-between align-items-center gap-2"><p>© 2025 Gokul Jewellers Pvt. Ltd. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></div></footer>
+<a href="https://wa.me/919376004356" class="wa-btn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span class="wa-tooltip">Chat on WhatsApp</span></a>
+<button class="scroll-top-btn"><i class="fa-solid fa-chevron-up"></i></button>
+<div class="lightbox" id="lightbox"><div class="lightbox-wrap"><button class="lightbox-close"><i class="fa-solid fa-xmark"></i></button><img src="" alt="" class="lightbox-img"><div class="lightbox-caption"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
